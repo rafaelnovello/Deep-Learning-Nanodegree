@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://intridea.github.io/sketch.js/lib/sketch.min.js" type="text/javascript"></script>
+    <script src="/static/canvas2image.js" type="text/javascript"></script>
+    <style>
+      body {
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      $(function() {
+        $('#simple_sketch').sketch();
+        $('#doit').click(function(){
+          var canvas = $('#simple_sketch')[0];
+          var data = canvas.toDataURL();
+          $('#hidden').val(data);
+          $('form')[0].submit();
+          event.preventDefault();
+        });
+        
+      });
+    </script>
+  </head>
+  <body>
+    <form method="post" action="" enctype="multipart/form-data">
+      <canvas id="simple_sketch" name="canvas" width="300" height="300" style="border: 1px solid #ccc"></canvas>
+      <input name="canvas" id="hidden" placeholder="question one" type="hidden" accept="image/*"/>
+      <div class="tools">
+        <!--input type="submit" class="button" id="send" value="Enviar"/-->
+        <button id="doit">Enviar</button>
+      </div>
+    </form>
+    <image id="theimage" ></image>
+    <h1>{{resposta}}</h1>
+  </body>
+</html>      
