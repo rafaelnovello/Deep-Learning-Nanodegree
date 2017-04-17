@@ -10,6 +10,10 @@ Instale os pacotes necessários:
 $ pip install -r requirements.txt
 ```
 
+## Treinar o modelo
+
+O aplicativo web depende do modelo treinado. Este processo acontece no arquivo TFLearn_Digit_Recognition.ipynb. Basta executar todo o notebook para iniciar, treinar e salvar o modelo treinado como MNIST.tfl
+
 ## Executar o aplicativo web
 
 Com as dependencias instaladas, execute os seguintes passos para rodar o web app:
