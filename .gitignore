@@ -1,0 +1,11 @@
+*.pyc
+*.db
+*.pid
+*.cache/
+checkpoint
+.ipynb_checkpoints/
+*.meta
+*.index
+*.data*
+__pycache__/
+*.gz
