@@ -31,6 +31,9 @@ def build_model():
     model = tflearn.DNN(net)
     return model
 
+# criação e carregamento do modelo
+model = build_model()
+model.load('../MNIST.tfl')
 
 @app.route('/', methods=['POST', 'GET'])
 def home():
@@ -45,10 +48,6 @@ def home():
         X = X.reshape(784)
         # import pdb; pdb.set_trace()
         try:
-            sleep(1)
-            model = build_model()
-            sleep(1)
-            model.load('../MNIST.tfl')
             y = model.predict([X])
             resp = get_answer(y)
         except:
