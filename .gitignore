@@ -9,3 +9,9 @@ checkpoint
 *.data*
 __pycache__/
 *.gz
+*.p
+*.zip
+cifar-10-batches-py
+fast-style-transfer
+flappy-bird
+siraj-regression
