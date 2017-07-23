@@ -13,6 +13,7 @@ __pycache__/
 *.zip
 *.pkl
 *.mat
+*.csv
 *.zip.st
 cifar-10-batches-py
 fast-style-transfer
