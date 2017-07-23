@@ -12,6 +12,7 @@ __pycache__/
 *.p
 *.zip
 *.pkl
+*.mat
 cifar-10-batches-py
 fast-style-transfer
 flappy-bird
