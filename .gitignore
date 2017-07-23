@@ -13,9 +13,11 @@ __pycache__/
 *.zip
 *.pkl
 *.mat
+*.zip.st
 cifar-10-batches-py
 fast-style-transfer
 flappy-bird
 siraj-regression
 .floydexpt
 .floydignore
+face_generation/data/*
