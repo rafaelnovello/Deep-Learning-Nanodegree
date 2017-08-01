@@ -21,4 +21,8 @@ flappy-bird
 siraj-regression
 .floydexpt
 .floydignore
-face_generation/data/*
+4-Generative-Adversarial-Net/Project-5/data/*
+4-Generative-Adversarial-Net/Deep-Conv-GAN-House-Num/data/*
+*/checkpoints/*
+sandbox/language-translation-demo/data
+sandbox/fast-style-transfer
